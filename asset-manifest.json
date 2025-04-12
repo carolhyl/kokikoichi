@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kokikoichi/static/css/main.e6c13ad2.css",
+    "main.js": "/kokikoichi/static/js/main.bf4f7bd4.js",
+    "static/js/687.20fbb070.chunk.js": "/kokikoichi/static/js/687.20fbb070.chunk.js",
+    "index.html": "/kokikoichi/index.html",
+    "main.e6c13ad2.css.map": "/kokikoichi/static/css/main.e6c13ad2.css.map",
+    "main.bf4f7bd4.js.map": "/kokikoichi/static/js/main.bf4f7bd4.js.map",
+    "687.20fbb070.chunk.js.map": "/kokikoichi/static/js/687.20fbb070.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.bf4f7bd4.js"
+  ]
+}
