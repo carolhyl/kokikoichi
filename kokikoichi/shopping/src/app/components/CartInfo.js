@@ -2,9 +2,16 @@
 
 import React from 'react';
 import { useCart } from './CartContext';
+import Link from 'next/link';
 
 export default function CartInfo() {
-  const { cart, removeFromCart, clearCart } = useCart();
+  const {
+    cart,
+    increaseQty,
+    decreaseQty,
+    removeFromCart,
+    clearCart,
+  } = useCart();
 
   return (
     <div>
@@ -16,8 +23,18 @@ export default function CartInfo() {
           <ul>
             {cart.map((item, idx) => (
               <li key={idx}>
-                {item.name} - ${item.price.toFixed(2)}
-                <button onClick={() => removeFromCart(item.id)}>刪除</button>
+                <Link href={`/product/${item.category}/${item.id}`} style={{ marginRight: '1rem' }}>
+                  {item.name}
+                </Link>
+                <div>
+                  數量: {item.quantity}
+                  <button onClick={() => decreaseQty(item.id)} style={{ marginLeft: '0.5rem' }}>➖</button>
+                  <button onClick={() => increaseQty(item.id)} style={{ marginLeft: '0.5rem' }}>➕</button>
+                  <button onClick={() => removeFromCart(item.id)} style={{ marginLeft: '0.5rem' }}>
+                    🗑️
+                  </button>
+                </div>
+                <div>小計：${(item.price * item.quantity).toFixed(2)}</div>
               </li>
             ))}
           </ul>
