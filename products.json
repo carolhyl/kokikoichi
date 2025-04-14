@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "category": "sticker",
+    "name": "✨ Sticker",
+    "price": 2.99,
+    "description": "一個超可愛的閃亮貼紙！",
+    "image": "https://via.placeholder.com/200x200?text=Sticker"
+  },
+  {
+    "id": 2,
+    "category": "mug",
+    "name": "☕ Mug",
+    "price": 8.99,
+    "description": "喝咖啡必備的馬克杯。",
+    "image": "https://via.placeholder.com/200x200?text=Mug"
+  },
+  {
+    "id": 3,
+    "category": "tshirt",
+    "name": "👕 T-Shirt",
+    "price": 15.99,
+    "description": "舒適的短袖 T 恤，適合日常穿搭。",
+    "image": "https://via.placeholder.com/200x200?text=T-Shirt"
+  }
+]
